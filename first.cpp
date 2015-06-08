@@ -26,6 +26,12 @@ public:
     {
         std::cout << "Printing stuff" << std::endl;
     }
+
+    void greatstuff()
+    {
+        if (everything_is_all_right)
+            std::cout << "here you go..." << std::endl;
+    }
 };
 
 int main(int argc, const char *argv[])
