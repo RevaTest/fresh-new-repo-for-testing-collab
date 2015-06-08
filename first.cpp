@@ -29,7 +29,8 @@ public:
 
     void greatstuff()
     {
-        std::cout << "here you go..." << std::endl;
+        if (everything_is_all_right)
+            std::cout << "here you go..." << std::endl;
     }
 };
 
