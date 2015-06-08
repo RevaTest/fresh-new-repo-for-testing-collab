@@ -26,6 +26,10 @@ public:
     {
         std::cout << "Printing stuff" << std::endl;
     }
+
+    void greatstuff()
+    {
+    }
 };
 
 int main(int argc, const char *argv[])
