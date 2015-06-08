@@ -29,6 +29,7 @@ public:
 
     void greatstuff()
     {
+        std::cout << "here you go..." << std::endl;
     }
 };
 
