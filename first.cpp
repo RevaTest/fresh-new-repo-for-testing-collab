@@ -2,30 +2,30 @@
 #include <string>
 #include <functional>
 
-void callDoIt(std::function<void()> fn)
+void callDoIt(std::function<void(int)> fn, int value)
 {
     if (fn)
-        fn();
+        fn(value);
 }
 
 class Foo
 {
 public:
-    void doIt()
+    void doIt(int value)
     {
-        std::cout << "Doing it..." << std::endl;
+        std::cout << "Doing it for " << value << "..." << std::endl;
     }
 
-    void work()
+    void work(int value)
     {
         using namespace std::placeholders;
-        callDoIt(std::bind(&Foo::doIt, this));
+        callDoIt(std::bind(&Foo::doIt, this, _1), value);
     }
 };
 
 int main(int argc, const char *argv[])
 {
     Foo foo;
-    foo.work();
+    foo.work(15);
     return 0;
 }
