@@ -21,6 +21,11 @@ public:
         using namespace std::placeholders;
         callDoIt(std::bind(&Foo::doIt, this));
     }
+
+    void print()
+    {
+        std::cout << "Printing stuff" << std::endl;
+    }
 };
 
 int main(int argc, const char *argv[])
