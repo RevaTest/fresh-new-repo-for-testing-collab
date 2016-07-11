@@ -33,8 +33,7 @@ public:
             std::cout << "here you go..." << std::endl;
     }
 
-    void newFn() {
-    }
+    void YetAnother() {}
 };
 
 int main(int argc, const char *argv[])
