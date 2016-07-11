@@ -32,6 +32,9 @@ public:
         if (everything_is_all_right)
             std::cout << "here you go..." << std::endl;
     }
+
+    void newFn() {
+    }
 };
 
 int main(int argc, const char *argv[])
